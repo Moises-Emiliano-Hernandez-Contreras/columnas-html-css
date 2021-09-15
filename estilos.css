@@ -18,14 +18,16 @@ body{
 }
 /* Centrar */
 #principal{
+      margin-top: 15vh;
       padding-left: 50px;
       padding-right: 50px; 
       display: flex;
       justify-content: center;  
       align-items: center;
-      height:100vh;  
+      /* height:90vh;   */
 }
 .card{
+
       border-radius: 26px;
       overflow:hidden;
       box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.075);  
@@ -72,4 +74,41 @@ p{
 }
 #tres{
       background-color:var(--Very-dark-cyan)
+}
+
+@media only screen and (max-width: 800px) {
+      #principal {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;                          
+      }
+/*       .card-enlace{
+            color: var(--Transparent-white);
+            background-color: var(--Very-light-gray);
+      }
+      #enlace-uno{
+            color: var(--Bright-orange);
+      }
+      #enlace-dos{
+            color:var(--Dark-cyan);
+      }
+      #enlace-tres{
+            color:var(--Very-dark-cyan);
+      } */
+    }
+    @media only screen and (max-width:980px){
+      .card-enlace{
+            color: var(--Transparent-white);
+            background-color: var(--Very-light-gray);
+      }
+      #enlace-uno{
+            color: var(--Bright-orange);
+      }
+      #enlace-dos{
+            color:var(--Dark-cyan);
+      }
+      #enlace-tres{
+            color:var(--Very-dark-cyan);
+      }
 }
